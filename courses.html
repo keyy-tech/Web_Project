@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Dr. Enyonam - Courses</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Courses I Teach</h2>
+      <section class="courses-section">
+        <table class="courses-table">
+          <thead>
+            <tr>
+              <th>Course Title</th>
+              <th>Description</th>
+              <th>Level</th>
+              <th>Semester</th>
+              <th>Materials</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Introduction to Computer Science</strong></td>
+              <td>This foundational course introduces students to the basic principles of computer science, including programming, algorithms, and problem-solving techniques.</td>
+              <td>Undergraduate</td>
+              <td>Fall 2025</td>
+              <td><a href="docs/intro-to-cs-syllabus.pdf" target="_blank">Download Syllabus</a></td>
+            </tr>
+            <tr>
+              <td><strong>Artificial Intelligence</strong></td>
+              <td>This course explores core concepts of AI such as search algorithms, knowledge representation, reasoning, and machine learning techniques.</td>
+              <td>Graduate</td>
+              <td>Spring 2026</td>
+              <td><a href="docs/ai-course-outline.pdf" target="_blank">Download Outline</a></td>
+            </tr>
+            <tr>
+              <td><strong>Web Programming</strong></td>
+              <td>This course covers front-end and back-end web development, focusing on HTML, CSS, JavaScript, and web frameworks like Django or Flask.</td>
+              <td>Undergraduate</td>
+              <td>Spring 2026</td>
+              <td><a href="docs/web-programming-materials.pdf" target="_blank">Course Materials</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="current-year"></span> Dr. Jennifer Smith |
+        <a href="https://www.stateuniversity.edu" target="_blank">State University</a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

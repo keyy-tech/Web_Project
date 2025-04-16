@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Dr. Enyonam - Contact</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Contact Me</h2>
+      <section class="contact-section">
+        <p>If you'd like to reach out for collaborations, student advising, or general inquiries, feel free to contact me using the form below or through my official email.</p>
+        
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label>Reason for Contact</label>
+          <div>
+            <input type="radio" id="collaboration" name="reason" value="collaboration" required />
+            <label for="collaboration">Collaboration</label><br />
+
+            <input type="radio" id="advising" name="reason" value="advising" />
+            <label for="advising">Student Advising</label><br />
+
+            <input type="radio" id="other" name="reason" value="other" />
+            <label for="other">Other</label>
+          </div>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <div>
+            <input type="checkbox" id="subscribe" name="subscribe" />
+            <label for="subscribe">Subscribe to newsletter</label>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <p><strong>Email:</strong> j.smith@stateuniversity.edu</p>
+          <p><strong>Office:</strong> CS Building, Room 204</p>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="current-year"></span> Dr. Jennifer Smith |
+        <a href="https://www.stateuniversity.edu" target="_blank">State University</a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

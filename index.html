@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Dr. Enyonam - Home</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Welcome to My Academic Website</h2>
+        <div class="welcome-container">
+          <img src="images/pyclub.jpeg" alt="Dr. Smith" class="profile-img" />
+          <p>
+            Welcome to the official website of Dr. Jennifer Smith, Professor of
+            Computer Science at State University. This site provides information
+            about my research, teaching, and professional activities. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+          </p>
+        </div>
+
+        <div class="rollover-container">
+          <a href="courses.html">
+            <img
+              src="images/pyclub.jpeg"
+              alt="Courses"
+              id="rollover-img"
+              class="rollover-image"
+            />
+          </a>
+          <p>View my courses</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Recent News</h2>
+        <table class="data-table">
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
+          </tr>
+          <tr>
+            <td>March 2023</td>
+            <td>Published new paper on Machine Learning in ACM Journal</td>
+          </tr>
+          <tr>
+            <td>January 2023</td>
+            <td>Received Teaching Excellence Award</td>
+          </tr>
+          <tr>
+            <td>November 2022</td>
+            <td>Keynote speaker at International CS Conference</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="current-year"></span> Dr. Jennifer Smith |
+        <a href="https://www.stateuniversity.edu" target="_blank"
+          >State University</a
+        >
+      </p>
+    </footer>
+    <script>
+      // Set the current year dynamically
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
